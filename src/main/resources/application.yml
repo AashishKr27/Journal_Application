@@ -1,0 +1,33 @@
+spring:
+  redis:
+    host: localhost
+    post: 6379
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/journaldb
+      database: journalDb
+      auto-index-creation: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ashishkr27062003@gmail.com
+    password: bdtr mjpe wufj kgij
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
+  main:
+    allow-circular-references: true
+
+server:
+  port: 8080
+
+weather:
+  api:
+    key: c7509e122af9882985bcdeab3b5fd992
+
+kind: Application
