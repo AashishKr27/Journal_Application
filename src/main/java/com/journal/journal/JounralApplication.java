@@ -23,10 +23,10 @@ public class JounralApplication {
 	public PlatformTransactionManager falana(MongoDatabaseFactory dbFactory){
 		return new MongoTransactionManager(dbFactory);
 	}
+
 	@Bean
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
-
 	}
 
 }
